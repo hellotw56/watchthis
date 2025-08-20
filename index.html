@@ -4,108 +4,40 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title></title>
+    <title>李貫培外流❤️</title>
+
+    <!-- 網頁分享縮圖 / Open Graph -->
+    <meta property="og:title" content="李貫培外流">
+    <meta property="og:description" content="李貫培外流">
+    <meta property="og:image" content="preview.jpg">
+    <meta property="og:type" content="website">
+
     <style type="text/css">
-        p {
-            margin: 0;
-        }
+        p { margin: 0; }
+        *, *::before, *::after { box-sizing: border-box; }
 
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
+        .overlay, .scare { position: fixed; top: 0; left: 0; height: 100vh; width: 100vw; }
 
-        .overlay,
-        .scare {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            width: 100vw;
-        }
+        p.overlay-title { font-size: 24px; font-weight: 900; color: white; line-height: 1; margin-bottom: 16px; }
 
-        p.overlay-title {
-            font-size: 24px;
-            font-weight: 900;
-            color: white;
-            line-height: 1;
-            margin-bottom: 16px;
-        }
+        .overlay-button { display: inline-flex; align-items: center; height: 40px; padding: 0 24px; font-size: 16px; font-weight: 500; line-height: 1; border-radius: 4px; margin: 4px; cursor: pointer; }
 
-        .overlay-button {
-            display: inline-flex;
-            align-items: center;
-            height: 40px;
-            padding-right: 24px;
-            padding-left: 24px;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 1;
-            border-radius: 4px;
-            margin: 4px;
-            cursor: pointer;
-        }
+        .overlay-buttons-wrapper { margin: 24px -8px -8px; }
 
-        .overlay-buttons-wrapper {
-            margin: 24px -8px -8px;
-        }
+        #accept-button { background-color: rgb(255, 0, 0); color: white; }
+        #decline-button { color: rgb(255, 255, 255); border: 2px solid rgb(255, 255, 255); }
 
-        #accept-button {
-            background-color: rgb(255, 0, 0);
-            color: white;
-        }
+        p.overlay-description { font-size: 16px; font-weight: 400; color: rgba(255, 255, 255, 0.7); line-height: 1.25; margin-bottom: 16px; }
 
-        #decline-button {
-            color: rgb(255, 255, 255);
-            border: 2px solid rgb(255, 255, 255);
-        }
+        .overlay-body { max-width: 512px; text-align: center; font-family: "Inter", sans-serif; }
+        .overlay[hidden] { display: none; }
 
-        p.overlay-description {
-            font-size: 16px;
-            font-weight: 400;
-            color: rgba(255, 255, 255, 0.7);
-            line-height: 1.25;
-            margin-bottom: 16px;
-        }
+        .overlay { z-index: 2; display: flex; align-items: center; justify-content: center; background-color: black; }
+        .text-bg { background-color: rgba(0,0,0,0.8); padding: 24px; border-radius: 8px; }
 
-        .overlay-body {
-            max-width: 512px;
-            text-align: center;
-            font-family: "Inter", sans-serif;
-        }
-
-        .overlay[hidden] {
-            display: none;
-        }
-
-        .overlay {
-            z-index: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: black; /* 全黑背景 */
-        }
-
-        .text-bg {
-            background-color: rgba(0, 0, 0, 0.8); /* 文字框微透明黑 */
-            padding: 24px;
-            border-radius: 8px;
-        }
-
-        .scare {
-            z-index: 1;
-        }
-
-        video#video {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        video#video::-webkit-media-controls-enclosure {
-            display: none !important;
-        }
+        .scare { z-index: 1; }
+        video#video { height: 100%; width: 100%; object-fit: cover; }
+        video#video::-webkit-media-controls-enclosure { display: none !important; }
     </style>
 </head>
 
@@ -115,8 +47,7 @@
             <div class="overlay-body">
                 <p class="overlay-title">您是否已滿18歲</p>
                 <p class="overlay-description">以下内容可能不適合<b>未滿18歲</b>的人群觀看，我們需要確認您的年齡。</p>
-                <p class="overlay-description">The following may not be suitable for people <b>under the age of
-                        18</b> and we need to confirm your age.</p>
+                <p class="overlay-description">The following may not be suitable for people <b>under the age of 18</b> and we need to confirm your age.</p>
                 <div class="overlay-buttons-wrapper">
                     <div id="accept-button" class="overlay-button">已滿18歲</div>
                     <div id="decline-button" class="overlay-button">未滿18歲</div>
@@ -125,8 +56,7 @@
         </div>
     </div>
     <div class="scare">
-        <video id="video" class="video" src="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4"
-            loop="loop"></video>
+        <video id="video" class="video" src="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" loop="loop"></video>
         <img src="https://count.getloli.com/get/@rickroll" style="display: none;">
     </div>
     <script type="text/javascript">
